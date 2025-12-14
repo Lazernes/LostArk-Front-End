@@ -1,0 +1,74 @@
+.item-detail-header {
+  display: flex;              /* ⭐ 한 줄 */
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 16px;
+}
+
+/* 아이콘 wrapper (배경 담당) */
+.item-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  padding: 2px;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 실제 아이콘 */
+.item-detail-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* 아이템 이름 */
+.item-detail-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+  white-space: nowrap;        /* ⭐ 줄바꿈 방지 */
+}
+
+/* COMMON */
+.item-icon-wrapper.grade-common {
+  background: linear-gradient(135deg, #313131, #585858);
+}
+
+/* UNCOMMON */
+.item-icon-wrapper.grade-uncommon {
+  background: linear-gradient(135deg, #1E2D0B, #304911);
+}
+
+/* RARE */
+.item-icon-wrapper.grade-rare {
+  background: linear-gradient(135deg, #112739, #113D5D);
+}
+
+/* EPIC */
+.item-icon-wrapper.grade-epic {
+  background: linear-gradient(135deg, #2E123C, #480D5D);
+}
+
+/* LEGENDARY */
+.item-icon-wrapper.grade-legendary {
+  background: linear-gradient(135deg, #452B06, #9E5F04);
+}
+
+/* RELIC */
+.item-icon-wrapper.grade-relic {
+  background: linear-gradient(135deg, #48220B, #A24006);
+}
+
+/* ANCIENT */
+.item-icon-wrapper.grade-ancient {
+  background: linear-gradient(135deg, #3D3325, #DCC999);
+}
+
+/* SIDEREAL */
+.item-icon-wrapper.grade-sidereal {
+  background: linear-gradient(135deg, #0C2E2C, #2FABAB);
+}

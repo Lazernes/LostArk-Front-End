@@ -1,0 +1,53 @@
+:root {
+  --header-bg: #1f2933;
+  --header-text: #ffffff;
+  --header-text-muted: #cbd5e1;
+  --header-active: #2dd4bf;
+}
+
+.header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  background-color: #f97316; /* 임시 로고 컬러 */
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-item {
+  color: var(--header-text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.nav-item:hover {
+  color: var(--header-text);
+}
+
+.nav-item.active {
+  color: var(--header-text);
+  border-bottom: 2px solid var(--header-active);
+}
