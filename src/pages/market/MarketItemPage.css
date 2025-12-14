@@ -1,0 +1,57 @@
+/* 페이지 전체 */
+.market-page {
+  height: calc(100vh - 56px); /* Header 높이 제외 */
+  background-color: #f8fafc;
+}
+
+/* 중앙 레이아웃 */
+.market-layout {
+  height: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 24px;
+
+  display: flex;
+  gap: 24px;
+}
+
+/* 왼쪽 사이드바 */
+.market-sidebar {
+  width: 530px;
+  min-width: 530px;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;              /* ⭐ 중요 */
+}
+
+/* 검색 영역 */
+.market-search {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;            /* ⭐ 줄어들지 않게 */
+}
+
+/* 아이템 리스트 */
+.market-list {
+  flex: 1;                   /* ⭐ 남은 영역 채우기 */
+  overflow-y: auto;          /* ⭐ 여기만 스크롤 */
+  padding: 16px;
+}
+
+/* 오른쪽 콘텐츠 */
+.market-content {
+  flex: 1;
+  min-width: 600px;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+
+  color: #111827;
+}

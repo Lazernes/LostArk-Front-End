@@ -1,0 +1,134 @@
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* 아이템 한 줄 */
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: background-color 0.15s ease;
+}
+
+.item-row:hover {
+  background-color: #f1f5f9;
+}
+
+/* 선택된 아이템 */
+.item-row.selected {
+  background-color: #fff7ed;
+  border-left: 4px solid #f97316;
+}
+
+/* 아이콘 */
+.item-icon {
+  width: 40px;
+  height: 40px;
+  /* flex-shrink: 0; */
+}
+
+/* 이름 */
+.item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.item-bundle {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* 가격 */
+.item-price {
+  text-align: right;
+}
+
+.current-price {
+  font-weight: 600;
+}
+
+/* 변동 */
+.price-change {
+  font-size: 12px;
+}
+
+.price-change.up {
+  color: #ef4444;
+}
+
+.price-change.down {
+  color: #2563eb;
+}
+
+/* 빈 상태 */
+.item-list-empty {
+  padding: 16px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* 아이콘 배경 wrapper */
+.item-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* COMMON */
+.grade-common .item-icon-wrapper {
+  background: linear-gradient(135deg, #313131, #585858);
+}
+
+/* UNCOMMON */
+.grade-uncommon .item-icon-wrapper {
+  background: linear-gradient(135deg, #1E2D0B, #304911);
+}
+
+/* RARE */
+.grade-rare .item-icon-wrapper {
+  background: linear-gradient(135deg, #112739, #113D5D);
+}
+
+/* EPIC */
+.grade-epic .item-icon-wrapper {
+  background: linear-gradient(135deg, #2E123C, #480D5D);
+}
+
+/* LEGENDARY */
+.grade-legendary .item-icon-wrapper {
+  background: linear-gradient(135deg, #452B06, #9E5F04);
+}
+
+/* RELIC */
+.grade-relic .item-icon-wrapper {
+  background: linear-gradient(135deg, #48220B, #A24006);
+}
+
+/* ANCIENT */
+.grade-ancient .item-icon-wrapper {
+  background: linear-gradient(135deg, #3D3325, #DCC999);
+}
+
+/* SIDEREAL */
+.grade-sidereal .item-icon-wrapper {
+  background: linear-gradient(135deg, #0C2E2C, #2FABAB);
+}
