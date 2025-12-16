@@ -55,7 +55,7 @@ const MarketItemPage = () => {
                 items={items}
                 searchKeyword={searchKeyword}
                 selectedCategory={selectedCategory}
-                selectedItem={selectedItem}
+                selectedItemId={selectedItem?.itemId}
                 onSelectItem={setSelectedItem}
               />
             )}
